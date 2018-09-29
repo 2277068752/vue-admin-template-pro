@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 .index-page {
   background-color: #fff;
 }
