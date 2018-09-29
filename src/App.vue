@@ -10,5 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+@import "./styles/common";
+@import "./styles/custom";
 </style>
