@@ -1,15 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../views/index/index'
+import config from '../../config/index'
+import routes from './routers'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: '首页',
-      component: Home
-    }
-  ]
+  mode: 'history', // 后端支持可开
+  base: config.build.assetsPublicPath,
+  routes
 })
