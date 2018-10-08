@@ -7,7 +7,7 @@
 
 const GLOBAL_MUTATIONS = {
   setLoading: 'SET_LOADING'
-}
+} // global
 export default {
   GLOBAL_MUTATIONS
 }

@@ -1,6 +1,6 @@
 # vue-admin-element-pro
 
-> 个人维护的管理平台，如有改善，敬请fork
+> 个人维护的管理平台，如有改善，敬请 fork
 
 ### Git 规范
 
@@ -14,3 +14,26 @@
 - hotfix 分支为bug修复分支，即测试分支
 
 Tag 采用三段式，v版本.里程碑.序号；如：v1.2.1
+
+### 平台技术整理
+
+#### Vuex
+
+##### 和 localStorage 结合，持久化 vuex 中的数值
+```
+  plugins: [createPersistedState({
+    key: config.build.assetsPublicPath + 'vuex',
+    paths: [''], // 只缓存service里的state
+    getState: (key) => localStorage.get(key),
+    setState: (key, state) => localStorage.set(key, state)
+  })]
+```
+##### 统一配置 vuex 中 mutations 名称
+```
+const GLOBAL_MUTATIONS = {
+  setLoading: 'SET_LOADING'
+} // global
+export default {
+  GLOBAL_MUTATIONS
+}
+```
