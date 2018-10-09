@@ -17,7 +17,7 @@ Tag 采用三段式，v版本.里程碑.序号；如：v1.2.1
 ##### Git commit中使用 emoji
 emoji | emoji 代码 | commit说明 
 ---|---|---
-（庆祝）| :tada:| 初次提交
+（庆祝:tada:）| :tada:| 初次提交
 （火花）| :sparkles:| 引入新功能
 （bug）| :bug:| 修复bug
 （书签）| :bookmark:| 发行/版本标签
@@ -37,7 +37,7 @@ emoji | emoji 代码 | commit说明
 （施工）| :construction:| 工作进行中
 （苹果）| :apple:| 修复 macOS 下的问题
 （企鹅）| :penguin:| 修复 Linux 下的问题
-（旗帜）| :checked_flag:| 修复 Windows 下的问题
+（旗帜）| :checkered_flag:| 修复 Windows 下的问题
 
  优点：
 - 统一团队Git Commit标准，便于后续代码review、版本发布、自动化生成change log

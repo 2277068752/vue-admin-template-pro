@@ -2,13 +2,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './vuex/store'
-import ElementUI from 'element-ui'
+import AntDesignUI from 'ant-design-vue'
 import { sync } from 'vuex-router-sync'
 import UtilsPlugin from './assets/utils'
-import 'element-ui/lib/theme-chalk/index.css'
-
+import 'ant-design-vue/dist/antd.css'
+import './components/iSvgIcon/index'
 Vue.config.productionTip = false
-Vue.use(ElementUI)
+Vue.use(AntDesignUI)
 router.beforeEach((to, from, next) => {
   next()
 })
